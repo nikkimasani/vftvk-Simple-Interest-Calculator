@@ -1,20 +1,90 @@
-body{
-background-color: black;
-font-family: Arial;
-color:white;
-}
-h1{
-color:grey;
-font-family: Verdana;
+/* overall body properties */
+body {
+    background-color: black;
+    font-family: arial;
+    font-weight: bold;
 }
 
+/* main panel (centered screen) */
 .maindiv {
-background-color: white;
-color:black;
-position: center;
-margin: auto;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;    
+    width: 540px;
+    height: 340px;
+    padding: 10px 20px;
+    border-radius: 25px;
 
-width: 300px;
-border: 25px ;
-padding: 20px;
+}
+
+/* header position and size */
+.maindiv header {
+    height: 20%;
+    vertical-align: top;
+}
+
+/* footer position and size */
+.maindiv footer {
+    height: 15%;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+/* modify the h1 style */
+h1 {
+    color: grey;
+    font-family: verdana;
+    font-size: 26pt;
+    font-weight: bold;
+}
+
+/* appearance of the button */
+button {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    font-family: arial;
+    color: black;
+}
+
+/* the form section's position and size */
+.form {
+    height: 65%;
+    align: center;
+}
+
+/* the table in the form class will have the position and size and spacing*/
+.form table {
+    margin-left: 15%;
+    margin-right: 5%;
+    width: 80%;
+    vertical-align: middle;
+    border-spacing: 0px 5px;
+}
+
+/* all columns of the table will have elements vertically aligned in the middle */
+.form table td {
+    vertical-align: middle;
+}
+
+/* left columns of the table follow this width */
+.form table td.left {
+    width: 150px;
+}
+
+/* controls the result display block position and size */
+.resultpanel {
+    margin-left: 15%;
+    margin-right: 5%;
+    width: 80%;
+}
+
+/* highlight the result text in yellow */
+.hitext {
+    background-color: yellow;
 }
